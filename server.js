@@ -1,6 +1,11 @@
 const express = require('express');
 const app = express();
 
+// Route for the root URL
+app.get('/', (req, res) => {
+    res.send('Choose /NodeJS, /Subject, /exam');
+});
+
 // Route for /subject
 app.get('/subject', (req, res) => {
     res.send('ITE314');
@@ -15,10 +20,6 @@ app.get('/exam', (req, res) => {
 app.get('/node', (req, res) => {
     res.send('NODEJS');
 });
-app.get('/', (req, res) => {
-    res.send('Choose /NodeJS, /Subject, /exam');
-});
-
 
 // Route for /mydata
 app.get('/mydata', (req, res) => {
