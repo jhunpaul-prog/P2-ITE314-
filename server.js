@@ -15,6 +15,10 @@ app.get('/exam', (req, res) => {
 app.get('/node', (req, res) => {
     res.send('NODEJS');
 });
+app.get('/', (req, res) => {
+    res.send('Choose /NodeJS, /Subject, /exam');
+});
+
 
 // Route for /mydata
 app.get('/mydata', (req, res) => {
